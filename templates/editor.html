@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Offset Editor</title>
+</head>
+<body>
+    <h1>Edytor Offsetów</h1>
+    <form method="POST">
+        {% for key, value in offsets.items() %}
+            <label>{{ key }}</label>
+            <input name="{{ key }}" value="{{ value }}" /><br/>
+        {% endfor %}
+        <br/>
+        <button type="submit">Zapisz</button>
+    </form>
+</body>
+</html>
